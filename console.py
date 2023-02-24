@@ -54,7 +54,8 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
 
     def do_show(self, inp):
-        """ Prints the string representation of an instance based on the class name and id"""
+        """ Prints the string representation \
+of an instance based on the class name and id"""
 
         string_split = inp.split()
 
@@ -76,7 +77,8 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
 
     def do_destroy(self, inp):
-        """Deletes an instance based on the class name and id (save the change into the JSON"""
+        """Deletes an instance based on the class\
+name and id (save the change into the JSON"""
 
         string_split = inp.split()
 
@@ -99,7 +101,8 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
 
     def do_all(self, inp):
-        """Prints all string representation of all instances based or not on the class name"""
+        """Prints all string representation of all\ 
+instances based or not on the class name"""
 
         string_split = inp.split()
 
@@ -132,7 +135,8 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
 
     def do_update(self, inp):
-        """Updates an instance based on class name and id by adding or updating attribute"""
+        """Updates an instance based on class name\
+and id by adding or updating attribute"""
 
         string_split = inp.split()
 

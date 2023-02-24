@@ -9,4 +9,4 @@ class TestState(unittest.TestCase):
     def test_state(self):
         """test state"""
         state = State()
-        self.assertTrue(type(state) is str)
+        self.assertTrue(type(state.name) is str)

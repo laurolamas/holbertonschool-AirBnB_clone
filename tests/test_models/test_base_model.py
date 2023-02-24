@@ -11,11 +11,5 @@ class TestBaseModel(unittest.TestCase):
         """test save function"""
 
         object_BaseModel = BaseModel()
-        object_BaseModel.id = "50"
-        storage = FileStorage()
-        my_dict = object_BaseModel.to_dict()
-        object_BaseModel.save()
-
-        self.assertEqual(object_BaseModel.id, 50)
-
-        object_BaseModel.created_at
+        object_BaseModel.id = 50
+        self.assertEqual(object_BaseModel.id, "50")

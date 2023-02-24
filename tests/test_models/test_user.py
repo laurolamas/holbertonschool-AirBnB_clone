@@ -9,12 +9,7 @@ class TestUser(unittest.TestCase):
     def test_user(self):
         """test user function"""
         user = User()
-        user.email = "test@gmail.com"
-        user.password = "test1"
-        user.first_name = "jero"
-        user.last_name = "Lussich"
-
         self.assertTrue(type(user.email) is str)
-        self.assertTrue(type(user.email) is str)
-        self.assertTrue(type(user.email) is str)
-        self.assertTrue(type(user.email) is str)
+        self.assertTrue(type(user.password) is str)
+        self.assertTrue(type(user.first_name) is str)
+        self.assertTrue(type(user.last_name) is str)

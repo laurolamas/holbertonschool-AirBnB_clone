@@ -4,8 +4,12 @@ from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 
 
-class TestFilestorage(unittest.TestCase):
+class TestFileStorage(unittest.TestCase):
     """test base model"""
 
-    def test_Filestorage(self):
+    def test_filestorage(self):
         """test filestorage functions"""
+        storage = FileStorage()
+        storage.all()
+        storage.reload()
+        self.assertFalse(len(storage.all()) == 0)

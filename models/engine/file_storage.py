@@ -41,7 +41,6 @@ class FileStorage:
         try:
             with open(self.__file_path) as file:
                 for key, value in json.load(file).items():
-                    print(value)
                     self.__objects[key] = eval(value['__class__'])(**value)
         except Exception:
             pass

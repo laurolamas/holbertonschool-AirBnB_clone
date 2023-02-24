@@ -12,4 +12,4 @@ class TestBaseModel(unittest.TestCase):
 
         object_BaseModel = BaseModel()
         object_BaseModel.id = 50
-        self.assertEqual(object_BaseModel.id, "50")
+        self.assertEqual(object_BaseModel.id, 50)

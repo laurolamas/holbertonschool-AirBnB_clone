@@ -14,7 +14,7 @@ class TestUser(unittest.TestCase):
         user.first_name = "jero"
         user.last_name = "Lussich"
 
-        self.assertEqual(type(user.email), str)
-        self.assertEqual(type(user.email), str)
-        self.assertEqual(type(user.email), str)
-        self.assertEqual(type(user.email), str)
+        self.assertTrue(type(user.email) is str)
+        self.assertTrue(type(user.email) is str)
+        self.assertTrue(type(user.email) is str)
+        self.assertTrue(type(user.email) is str)

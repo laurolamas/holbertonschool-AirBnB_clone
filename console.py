@@ -101,7 +101,7 @@ name and id (save the change into the JSON"""
                 print("** class doesn't exist **")
 
     def do_all(self, inp):
-        """Prints all string representation of all\ 
+        """Prints all string representation of all\\
 instances based or not on the class name"""
 
         string_split = inp.split()

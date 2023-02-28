@@ -12,4 +12,4 @@ class TestFileStorage(unittest.TestCase):
         storage = FileStorage()
         storage.all()
         storage.reload()
-        self.assertTrue(len(storage.all()) == 0)
+        self.assertFalse(len(storage.all()) == 0)

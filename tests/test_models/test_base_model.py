@@ -7,9 +7,7 @@ from models.engine.file_storage import FileStorage
 class TestBaseModel(unittest.TestCase):
     """test base model"""
 
-    def test_BaseModel_save(self):
+    def test_BaseModel_id(self):
         """test save function"""
-
-        object_BaseModel = BaseModel()
-        object_BaseModel.id = 50
-        self.assertEqual(object_BaseModel.id, 50)
+        object_BaseModel = self.value()
+        self.assertEqual(type(object_BaseModel.id), str)

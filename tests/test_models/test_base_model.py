@@ -9,5 +9,5 @@ class TestBaseModel(unittest.TestCase):
 
     def test_BaseModel_id(self):
         """test save function"""
-        object_BaseModel = self.value()
+        object_BaseModel = BaseModel()
         self.assertEqual(type(object_BaseModel.id), str)
